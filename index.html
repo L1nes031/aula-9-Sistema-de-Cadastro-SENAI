@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/stlye.css" rel="stlye">
+    <title>Cadastro Seani</title>
+</head>
+<body>
+    <header>
+        <section class="inicio">
+            <h1>Cadastros Senai</h1>
+    </section>
+    </header>
+
+    <main>
+        <select class="agrupamento">
+            <h2>Cadastrar</h2>
+        <form id="formCadastro">
+            <div class="campo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome"
+                    placeholder="Digite seu nome Completo" required>
+            </div>
+
+            <div class="campo">
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" id="nascimento" required>
+            </div>
+
+            <div class="campo">
+                <label for="vinculo">Vinculo com SENAI:</label>
+                    <select id="vinculo" required>
+                        <option value="">Selecionar</option>
+                        <option value="Aluno">Aluno</option>
+                        <option value="Professor">Professor</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+            </div>
+
+            <div class="campo">
+                <label for="turma">Turma</label>
+                <input type="text" id="Turma"
+                    placeholder="Digite sua Turma ou Setor" required>
+            </div>
+
+            <h3>Endereço</h3>
+            
+         </form>
+        </select>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
