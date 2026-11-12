@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  background-color: #eff1f5;
+  color: #1d2b3a;
+  font-family: "DM Sans", Arial, sans-serif;
+}
+
+.topbar {
+  min-height: 76px;
+  background: #142b4a;
+  color: #f4f6fa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 max(5vw, 22px);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}

@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/stlye.css" rel="style">
-    <title>Cadastro Seani</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro Senai</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="imagens/logo senai.png">
-            <title>Senai</title>
-        </nav>
+    <header class="topbar">
+        <div class="brand">
+            <img src="imagens/logo senai.png" alt="Logo Senai" class="brand-mark">
+            <span>Senai</span>
+        </div>
+
         <section class="inicio">
             <h1>Cadastros Senai</h1>
         </section>
@@ -20,80 +22,72 @@
     <main>                              
         <section class="agrupamento">
             <h2>Cadastrar</h2>
-        <form id="formCadastro">
-            <div class="campo">
-                <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome"
-                    placeholder="Digite seu nome Completo" required>
-            </div>
+            <form id="formCadastro">
+                <div class="campo">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome Completo" required>
+                </div>
 
-            <div class="campo">
-                <label for="nascimento">Data de nascimento:</label>
-                <input type="date" id="nascimento" required>
-            </div>
+                <div class="campo">
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" id="nascimento" required>
+                </div>
 
-            <div class="campo">
-                <label for="vinculo">Vinculo com SENAI:</label>
+                <div class="campo">
+                    <label for="vinculo">Vínculo com SENAI:</label>
                     <select id="vinculo" required>
                         <option value="">Selecionar</option>
                         <option value="Aluno">Aluno</option>
                         <option value="Professor">Professor</option>
                         <option value="Outro">Outro</option>
                     </select>
-            </div>
+                </div>
 
-            <div class="campo">
-                <label for="Turma">Turma ou Setor:</label>
-                <input type="text" id="Turma"
-                    placeholder="Digite sua Turma ou Setor" required>
-            </div>
+                <div class="campo">
+                    <label for="Turma">Turma ou Setor:</label>
+                    <input type="text" id="Turma" placeholder="Digite sua Turma ou Setor" required>
+                </div>
+
+                <h3>Endereço</h3>
+                <div class="campo">
+                    <label for="CPF">CPF:</label>
+                    <input type="text" id="CPF" placeholder="Digite seu CPF" maxlength="11" required>
+                </div>
+
+                <div class="campo">
+                    <label for="Logradouro">Logradouro:</label>
+                    <input type="text" id="Logradouro" placeholder="Digite sua Rua ou Avenida" required>
+                </div>
+
+                <div class="campo">
+                    <label for="Numero">Número:</label>
+                    <input type="number" id="Numero" placeholder="Digite seu Número" required>
+                </div>
+
+                <div class="campo">
+                    <label for="Complemento">Complemento:</label>
+                    <input type="text" id="Complemento" placeholder="Digite o complemento">
+                </div>
+
+                <div class="campo">
+                    <label for="Bairro">Bairro:</label>
+                    <input type="text" id="Bairro" placeholder="Digite seu Bairro" required>
+                </div>
+
+                <div class="campo">
+                    <label for="Cidade">Cidade:</label>
+                    <input type="text" id="Cidade" placeholder="Digite sua Cidade" required>
+                </div>
+
+                <div class="campo">
+                    <label for="UF">UF:</label>
+                    <input type="text" id="UF" placeholder="Digite seu Estado" maxlength="2" required>
+                </div>
+
+                <!-- Faltava o botão para enviar o cadastro -->
+                <button type="submit">Salvar Cadastro</button>
+            </form>
         </section>
-
-            <h3>Endereço</h3>
-            <div class="campo">
-                <label for="CPF">CPF:</label>
-                <input type="number" id="CPF"
-                    placeholder="Digite seu CPF" maxlength="9" required>
-            </div>
-
-            <div class="campo">
-                <label for="logadouro">Logadouro:</label>
-                <input type="text" id="Logadouro"
-                    placeholder="Digite sua Rua ou Avenida" required>
-            </div>
-
-            <div class="campo">
-                <label for="Numero">Numero:</label>
-                <input type="number" id="Numero"
-                    placeholder="Digite seu Numero" required>
-            </div>
-
-            <div class="campo">
-                <label for="Complemento">Complemento:</label>
-                <input type="text" id="Complemento" 
-                    placeholder="Digete o complemento">
-            </div>
-
-            <div class="campo">
-                <label for="Bairro">Bairro:</label>
-                <input type="text" id="Bairro"
-                    placeholder="Digete seu Bairro" required>
-            </div>
-
-            <div class="campo">
-                <label for="Cidade">Cidade:</label>
-                <input type="text" id="Cidade"
-                    placeholder="Digite sua Cidade" required>
-            </div>
-
-            <div class="campo">
-                <label for="UF">UF:</label>
-                <input type="text" id="UF"
-                    placeholder="Digite seu Estado" maxlength="2" required>
-            </div>
-
-         </form>
-        </select>
     </main>
 
     <script src="script.js"></script>
