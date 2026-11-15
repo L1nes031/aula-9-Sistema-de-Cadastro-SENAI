@@ -42,7 +42,6 @@
                     </select>
                 </div>
 
-<<<<<<< HEAD
             <div class="campo">
                 <label for="Turma">Turma ou Setor:</label>
                 <input type="text" id="turma"
@@ -94,55 +93,34 @@
                     placeholder="Digite seu Estado" maxlength="2" required>
             </div>
 
-         </form>
-        </select>
-=======
-                <div class="campo">
-                    <label for="Turma">Turma ou Setor:</label>
-                    <input type="text" id="Turma" placeholder="Digite sua Turma ou Setor" required>
-                </div>
+            <button type="submit" id="btnCadastrar">
+                Cadastrar
+            </button>
+        </form>
 
-                <h3>Endereço</h3>
-                <div class="campo">
-                    <label for="CPF">CPF:</label>
-                    <input type="text" id="CPF" placeholder="Digite seu CPF" maxlength="11" required>
-                </div>
-
-                <div class="campo">
-                    <label for="Logradouro">Logradouro:</label>
-                    <input type="text" id="Logradouro" placeholder="Digite sua Rua ou Avenida" required>
-                </div>
-
-                <div class="campo">
-                    <label for="Numero">Número:</label>
-                    <input type="number" id="Numero" placeholder="Digite seu Número" required>
-                </div>
-
-                <div class="campo">
-                    <label for="Complemento">Complemento:</label>
-                    <input type="text" id="Complemento" placeholder="Digite o complemento">
-                </div>
-
-                <div class="campo">
-                    <label for="Bairro">Bairro:</label>
-                    <input type="text" id="Bairro" placeholder="Digite seu Bairro" required>
-                </div>
-
-                <div class="campo">
-                    <label for="Cidade">Cidade:</label>
-                    <input type="text" id="Cidade" placeholder="Digite sua Cidade" required>
-                </div>
-
-                <div class="campo">
-                    <label for="UF">UF:</label>
-                    <input type="text" id="UF" placeholder="Digite seu Estado" maxlength="2" required>
-                </div>
-
-                <!-- Faltava o botão para enviar o cadastro -->
-                <button type="submit">Salvar Cadastro</button>
-            </form>
+        <h2>Cadastros Realizados</h2>
+        <div class=" tabela-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome:</th>
+                        <th>Nascimento:</th>
+                        <th>Vinculo:</th>
+                        <th>Turma/Setor:</th>
+                        <th>Cep:</th>
+                        <th>Logradouro:</th>
+                        <th>Complemento:</th>
+                        <th>Bairro:</th>
+                        <th>Cidade:</th>
+                        <th>UF:</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="listaCadastros"></tbody>
+            </table>
+        </div>
         </section>
->>>>>>> 6a4d61712477f2818cb226d6a67fe2ffc67cfdea
+
     </main>
 
     <script src="script.js"></script>
