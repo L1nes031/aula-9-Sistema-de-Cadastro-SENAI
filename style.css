@@ -144,9 +144,10 @@ form h3 {
 
 table {
     width: 100%;
-    min-width: 1000px;
+    min-width: 1100px;
     border-collapse: collapse;
     background-color: white;
+    table-layout: auto;
 }
 
 thead {
@@ -156,19 +157,43 @@ thead {
 
 th,
 td {
-    padding: 14px;
+    padding: 12px;
     text-align: left;
     border-bottom: 1px solid #dce3ec;
     font-size: 14px;
+    vertical-align: middle;
+}
+
+th {
+    white-space: nowrap;
+}
+
+tbody tr {
+    background-color: #f4f7fb;
 }
 
 tbody tr:hover {
-    background-color: #f0f4f9;
+    background-color: #e8eef6;
+}
+
+td {
+    color: #263b55;
+}
+
+td:nth-child(6) {
+    min-width: 150px;
+}
+
+td:last-child {
+    white-space: nowrap;
+    min-width: 140px;
 }
 
 td button {
+    display: block;
+    width: 100%;
     padding: 8px 12px;
-    margin: 3px;
+    margin: 5px 0;
     border: none;
     border-radius: 5px;
     background-color: #2765a5;
@@ -178,13 +203,12 @@ td button {
 }
 
 td button:hover {
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
 td button:last-child {
     background-color: #c0392b;
 }
-
 @media (max-width: 700px) {
     .topbar {
         flex-direction: column;
